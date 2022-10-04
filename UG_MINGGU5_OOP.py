@@ -67,13 +67,13 @@ class KartuKeluarga:
 class Dictionary:
     #KONSTRUKTOR CLASS Dictionary
     def __init__(self, nama_lengkap, nik, jenis_kelamin, tempat_lahir, tanggal_lahir, agama, pendidikan, pekerjaan, status_perkawinan,\
-                  status, kewarganegaraan, no_paspor, no_kitas, ayah, ibu):
+                  status_hubunganKeluarga, kewarganegaraan, no_paspor, no_kitas, ayah, ibu):
         self.dictionary = {'namaLengkap': nama_lengkap,'nik' : nik, 'gender': jenis_kelamin, 'tempatLahir' : tempat_lahir,'tanggalLahir': tanggal_lahir,\
                         'agama' : agama,'pendidikan': pendidikan,'pekerjaan': pekerjaan,'statusPerkawinan' : status_perkawinan,\
-                        'status': status,'kewarganegaraan': kewarganegaraan, 'no_paspor': no_paspor,\
+                        'status': status_hubunganKeluarga,'kewarganegaraan': kewarganegaraan, 'no_paspor': no_paspor,\
                        'no_kitas': no_kitas,'ayah' : ayah, 'ibu' : ibu}
         self.dictionary1 = {'namaLengkap': nama_lengkap,'nik' : nik, 'gender': jenis_kelamin, 'tempatLahir' : tempat_lahir,'tanggalLahir': tanggal_lahir,'agama' : agama,'pendidikan': pendidikan,'pekerjaan': pekerjaan}
-        self.dictionary2 =  {'statusPerkawinan' : status_perkawinan,'status': status,'kewarganegaraan': kewarganegaraan, 'nomorPaspor': no_paspor,'no_kitas': no_kitas,'ayah' : ayah, 'ibu' : ibu}
+        self.dictionary2 =  {'statusPerkawinan' : status_perkawinan,'status': status_hubunganKeluarga,'kewarganegaraan': kewarganegaraan, 'nomorPaspor': no_paspor,'no_kitas': no_kitas,'ayah' : ayah, 'ibu' : ibu}
     
     #METHOD UNTUK PEMBUATAN GETTER DICTIONARY
     def get_dictionary(self):
